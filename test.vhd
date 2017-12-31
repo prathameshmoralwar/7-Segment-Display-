@@ -1,3 +1,20 @@
+--------------------------------------------------------------------------------------
+------ Company: Chalmers University Of Technology  
+------ Engineer: Prathamesh Prabhakar Moralwar
+------ 
+------ Create Date: 03/04/2017 07:26:17 PM
+------ Design Name: 
+------ Module Name: Test- Package
+------ Project Name: 7 Segment Control (Clocking, I/O,and FPGA board verification)
+------ Target Devices: Nexys4 DDR (xc7a100tcsg324-1)
+------ Tool Versions: Vivado 2017.2
+------ Description: VHDL Package for Data Type and Hex2Seven Segment Fucntion.
+------ Dependencies: None
+------ 
+------ Revision:
+------ Revision 0.01 - File Created
+------ Additional Comments:
+
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
