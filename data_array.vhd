@@ -1,3 +1,21 @@
+--------------------------------------------------------------------------------------
+------ Company: Chalmers University Of Technology  
+------ Engineer: Prathamesh Prabhakar Moralwar
+------ 
+------ Create Date: 03/04/2017 07:26:17 PM
+------ Design Name: 
+------ Module Name: Data Array
+------ Project Name: 7 Segment Control (Clocking, I/O,and FPGA board verification)
+------ Target Devices: Nexys4 DDR (xc7a100tcsg324-1)
+------ Tool Versions: Vivado 2017.2
+------ Description: Data Array
+------ Dependencies: None
+------ 
+------ Revision:
+------ Revision 0.01 - File Created
+------ Additional Comments:
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.test.all; 
@@ -28,97 +46,17 @@ if rising_edge (clk) then
 
 	case addr is  
 		
-		when "000" =>  data_out (0) <=	data_in; --1
---			           data_out (1) <= "0000";
---		               data_out (2)<= "0000";
---		               data_out (3)<= "0000";
---					   data_out (4) <= "0000";
---					   data_out (5) <= "0000";
---					   data_out (6) <= "0000";
---					   data_out (7) <= "0000";
-
-		when "001" =>   data_out (1) <= data_in; --2
---					    data_out (0) <= "0000";
---						data_out (2)<= "0000";
---						data_out (3) <= "0000";
---						data_out (4) <= "0000";
---						data_out (5) <= "0000";
---						data_out (6) <= "0000";
---						data_out (7) <= "0000";
-		
-		
+		when "000" =>  data_out (0) <=	data_in; --1          
+		when "001" =>   data_out (1) <= data_in; --2			    
 		when "010" =>  data_out (2) <= 	data_in; --3
---					   data_out (1) <= "0000";
---		               data_out (0)<= "0000";
---		               data_out (3) <= "0000";
---					   data_out (4) <= "0000";
---					   data_out (5) <= "0000";
---					   data_out (6) <= "0000";
---					   data_out (7) <= "0000";
-		
-		
-		when "011" =>   data_out (3) <=  	data_in; --4
---		               data_out (1) <= "0000";
---		               data_out (2)<= "0000";
---		               data_out (0) <= "0000";
---					   data_out (4) <= "0000";
---					   data_out (5) <= "0000";
---					   data_out (6) <= "0000";
---					   data_out (7) <= "0000";
-		
-		
-		when "100" =>  	data_out (4) <= 	data_in; --5
---					   data_out (1) <= "0000";
---		               data_out (2)<= "0000";
---		               data_out (3) <= "0000";
---					   data_out (0) <= "0000";
---					   data_out (5) <= "0000";
---					   data_out (6) <= "0000";
---					   data_out (7) <= "0000";
-		
-		when "101" =>   data_out (5) <=  	data_in; --6
---		               data_out (1) <= "0000";
---		               data_out (2)<= "0000";
---		               data_out (3) <= "0000";
---					   data_out (4) <= "0000";
---					   data_out (0) <= "0000";
---					   data_out (6) <= "0000";
---					   data_out (7) <= "0000";
-		
-		when "110" =>   data_out (6) <= 	data_in; --7
---		               data_out (1) <= "0000";
---		               data_out (2)<= "0000";
---		               data_out (3) <= "0000";
---					   data_out (4) <= "0000";
---					   data_out (5) <= "0000";
---					   data_out (0) <= "0000";
---					   data_out (7) <= "0000";
-		
-		
+		when "011" =>   data_out (3) <=  data_in; --4
+		when "100" =>  	data_out (4) <= data_in; --5
+		when "101" =>   data_out (5) <=  data_in; --6
+		when "110" =>   data_out (6) <= data_in; --7
 		when "111" =>   data_out (7)<=   data_in;
---					   data_out (1) <= "0000";
---		               data_out (2)<= "0000";
---		               data_out (3) <= "0000";
---					   data_out (4) <= "0000";
---					   data_out (5) <= "0000";
---					   data_out (6) <= "0000";
---					   data_out (0) <= "0000";
-		
 		when others => data_out <= ("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"); 
 		end case;
-	
-	--se 
-	--ta_out <= ("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"); 
 	end if;
---else 
-
---data_out <= ("0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"); 
-
 end if;
-
 end process;
-
 end behavioral;
-
-
-	
