@@ -1,35 +1,23 @@
 --------------------------------------------------------------------------------------
------- Company: 
------- Engineer: 
+------ Company: Chalmers University Of Technology  
+------ Engineer: Prathamesh Prabhakar Moralwar
 ------ 
------- Create Date: 10/04/2017 07:26:17 PM
+------ Create Date: 03/04/2017 07:26:17 PM
 ------ Design Name: 
------- Module Name: counter - Behavioral
------- Project Name: 
------- Target Devices: 
------- Tool Versions: 
------- Description: 
------- 
------- Dependencies: 
+------ Module Name: Counter
+------ Project Name: 7 Segment Control (Clocking, I/O,and FPGA board verification)
+------ Target Devices: Nexys4 DDR (xc7a100tcsg324-1)
+------ Tool Versions: Vivado 2017.2
+------ Description: Clock Divider using Counter
+------ Dependencies: None
 ------ 
 ------ Revision:
 ------ Revision 0.01 - File Created
 ------ Additional Comments:
------- 
---------------------------------------------------------------------------------------
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
------- Uncomment the following library declaration if using
------- arithmetic functions with Signed or Unsigned values
-----use IEEE.NUMERIC_STD.ALL;
-
------- Uncomment the following library declaration if instantiating
------- any Xilinx leaf cells in this code.
-------library UNISIM;
-------use UNISIM.VComponents.all;
 
 entity counter is
 Generic (N: integer := 100000);
@@ -68,14 +56,3 @@ begin
        end if;
     end process compteur; 
 end Behavioral;
-
-
-
-
-
-
-
-
-
-
-
