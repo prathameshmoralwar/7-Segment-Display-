@@ -1,9 +1,25 @@
+--------------------------------------------------------------------------------------
+------ Company: Chalmers University Of Technology  
+------ Engineer: Prathamesh Prabhakar Moralwar
+------ 
+------ Create Date: 03/04/2017 07:26:17 PM
+------ Design Name: 
+------ Module Name: Readout Block
+------ Project Name: 7 Segment Control (Clocking, I/O,and FPGA board verification)
+------ Target Devices: Nexys4 DDR (xc7a100tcsg324-1)
+------ Tool Versions: Vivado 2017.2
+------ Description: Readout Block
+------ Dependencies: None
+------ Revision:
+------ Revision 0.01 - File Created
+------ Additional Comments:
+
+
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 use work.test.all;
-
-
 
 ENTITY read_data IS
       PORT(rst:in STD_LOGIC;
